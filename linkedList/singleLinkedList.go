@@ -6,9 +6,9 @@ type node struct {
 }
 
 type List struct {
-	head   *node
-	tail   *node
-	length int
+	head *node
+	tail *node
+	size int
 }
 
 func init() {
@@ -19,7 +19,15 @@ func (l *List) isEmpty() bool {
 	return true
 }
 
-func (l *List) insert(val ...interface{}) {
+func (l *List) length() int {
+	return 0
+}
+
+func (l *List) get(idx int) {
+
+}
+
+func (l *List) insert(idx int, val ...interface{}) {
 
 }
 
@@ -31,18 +39,6 @@ func (l *List) deleteByData(val ...interface{}) {
 
 }
 
-func (l *List) addToHead(val ...interface{}) {
-
-}
-
-func (l *List) addToTail(val ...interface{}) {
-
-}
-
-func (l *List) getHead() {
-
-}
-
-func (l *List) getTail() {
+func (l *List) display() {
 
 }
